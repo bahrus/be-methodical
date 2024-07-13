@@ -1,0 +1,11 @@
+{
+  "name": "be-methodical",
+  "version": "0.0.0",
+  "description": "An [up and coming proposal](https://open-ui.org/components/invokers.explainer/#invokers-and-custom-elements) provides a way for custom elements to be invoked:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
