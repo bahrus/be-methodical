@@ -65,3 +65,17 @@ This enhancement makes it simple to add such methods to Mount based custom eleme
 <button command-for=mood-stone command="tellMeHowYouAreFeelingAboutToday">
 ```
 
+## Example 2c Specify source
+
+```JavaScript
+//File myScriptlet.js
+export function tellMeHowYouAreFeelingAboutToday: (targetElement, event) => {
+    console.log({targetElement, event});
+}
+```
+
+
+```html
+<script nomodule src="myScriptlet.js" be-methodical=mood-stone-base></script>
+```
+
