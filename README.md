@@ -27,12 +27,15 @@ An [up and coming proposal](https://open-ui.org/components/invokers.explainer/#i
 
 This enhancement makes it simple to add such methods to Mount based custom elements, and especially to declarative xtal-element generated custom elements:
 
-## Example 1a
+## Example 1a [TODO]
 
 ```html
 <script nomodule be-methodical=mood-stone-base>({
   tellMeHowYouAreFeelingAboutToday: (targetElement, event) => {
       console.log({targetElement, event});
+      return ({
+        //gets assigned gingerly into targetElement
+      })
   }
 })</script>
 ...
@@ -42,3 +45,23 @@ This enhancement makes it simple to add such methods to Mount based custom eleme
 
 <button command-for=mood-stone command="tellMeHowYouAreFeelingAboutToday">
 ```
+
+## Example 1b  Specify alternative name for command [TODO]
+
+```html
+<script nomodule be-methodical=mood-stone-base>({
+  tellMeHowYouAreFeelingAboutToday: ['--tell-me:How are you feeling about today?', (targetElement, event) => {
+      console.log({targetElement, event});
+      return ({
+        //gets assigned gingerly into targetElement
+      })
+  }]
+})</script>
+...
+<mood-stone itemscope>
+    <xtal-element inherits=mood-stone-base></xtal-element>
+</mood-stone>
+
+<button command-for=mood-stone command="tellMeHowYouAreFeelingAboutToday">
+```
+
