@@ -30,14 +30,11 @@ This enhancement makes it simple to add such methods to Mount based custom eleme
 ## Example 1a
 
 ```html
-<script nomodule be-methodical=mood-stone-base>
-  {
-    tellMeHowYouAreFeelingAboutToday: (targetElement, event) => {
-        console.log({targetElement, event});
-    }
+<script nomodule be-methodical=mood-stone-base>({
+  tellMeHowYouAreFeelingAboutToday: (targetElement, event) => {
+      console.log({targetElement, event});
   }
-    
-</script>
+})</script>
 ...
 <mood-stone itemscope>
     <xtal-element inherits=mood-stone-base></xtal-element>
