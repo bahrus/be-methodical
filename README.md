@@ -1,4 +1,4 @@
-# be-methodical [TODO]
+# be-methodical (🔬) [TODO]
 
 
 An [up and coming proposal](https://open-ui.org/components/invokers.explainer/#invokers-and-custom-elements) provides a way for custom elements to be invoked:

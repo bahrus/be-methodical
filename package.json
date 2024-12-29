@@ -4,8 +4,21 @@
   "description": "An [up and coming proposal](https://open-ui.org/components/invokers.explainer/#invokers-and-custom-elements) provides a way for custom elements to be invoked:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "python3 ./node_modules/ssi-server/ssi_server.py",
+    "test": "playwright test",
+    "safari": "npx playwright wk http://localhost:8000",
+    "update": "ncu -u && npm install"
   },
-  "author": "",
+  "dependencies": {
+    "be-enhanced": "0.0.163",
+    "be-hive": "0.0.243",
+    "trans-render": "0.0.876"
+  },
+  "devDependencies": {
+    "ssi-server": "0.0.1",
+    "@playwright/test": "1.49.1",
+    "xtal-element": "0.0.627"
+  },
+  "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
   "license": "MIT"
 }
