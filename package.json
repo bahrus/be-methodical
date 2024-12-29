@@ -1,8 +1,15 @@
 {
   "name": "be-methodical",
   "version": "0.0.0",
-  "description": "An [up and coming proposal](https://open-ui.org/components/invokers.explainer/#invokers-and-custom-elements) provides a way for custom elements to be invoked:",
-  "main": "index.js",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "custom-element",
+    "custom-elements"
+  ],
+  "description": "Autogenerate command methods for declarative web components",
+  "main": "be-methodical.js",
+  "module": "be-methodical.js",
   "scripts": {
     "serve": "python3 ./node_modules/ssi-server/ssi_server.py",
     "test": "playwright test",
@@ -19,6 +26,16 @@
     "@playwright/test": "1.49.1",
     "xtal-element": "0.0.627"
   },
+  "exports":{
+    ".": "./be-methodical.js",
+    "./be-methodical.js": "./be-methodical.js",
+    "./emc.js": "./emc.js",
+    "./🔬.js": "./🔬.js"
+  },
+  "files":[
+    "*.js",
+    "types.d.ts"
+  ],
   "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
   "license": "MIT"
 }
