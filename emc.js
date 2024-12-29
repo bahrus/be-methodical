@@ -14,7 +14,9 @@ export const emc = {
             instanceOf: 'String',
             mapsTo: 'ceName'
         }
-    }
+    },
+    enhPropKey: 'beMethodical',
+    importEnh: async () => (await import('./be-methodical.js')).BeMethodical,
 };
 const mose = seed(emc);
 MountObserver.synthesize(document, BeHive, mose);
