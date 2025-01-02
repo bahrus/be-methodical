@@ -1,4 +1,4 @@
-# be-methodical (🔬) [TODO]
+# be-methodical (🔬)
 
 
 An [up and coming proposal](https://open-ui.org/components/invokers.explainer/#invokers-and-custom-elements) provides a way for custom elements to be invoked:
@@ -27,7 +27,7 @@ An [up and coming proposal](https://open-ui.org/components/invokers.explainer/#i
 
 This enhancement makes it simple to add such methods to Mount based custom elements, and especially to declarative xtal-element generated custom elements:
 
-## Example 1a [TODO]
+## Example 1a
 
 ```html
 <script nomodule be-methodical=mood-stone-base>({
