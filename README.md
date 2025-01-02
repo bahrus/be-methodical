@@ -46,7 +46,7 @@ This enhancement makes it simple to add such methods to Mount based custom eleme
 <button command-for=mood-stone command="tellMeHowYouAreFeelingAboutToday">
 ```
 
-## Example 1b  Specify alternative name for command [TODO]
+## Example 1b  Specify alternative name for command [Untested]
 
 ```html
 <script nomodule be-methodical=mood-stone-base>({
@@ -65,17 +65,61 @@ This enhancement makes it simple to add such methods to Mount based custom eleme
 <button command-for=mood-stone command="tellMeHowYouAreFeelingAboutToday">
 ```
 
-## Example 2c Specify source
+## Viewing Demos Locally
+
+Any web server that can serve static files will do, but...
+
+1.  Install git.
+2.  Fork/clone this repo.
+3.  Install node.js.
+4.  Open command window to folder where you cloned this repo.
+5.  > npm install
+6.  > npm run serve
+7.  Open http://localhost:8000/demo/ in a modern browser.
+
+## Running Tests
+
+```
+> npm run test
+```
+
+## Using from ESM Module:
 
 ```JavaScript
-//File myScriptlet.js
-export function tellMeHowYouAreFeelingAboutToday: (targetElement, event) => {
-    console.log({targetElement, event});
-}
+import 'be-methodical/be-methodical.js';
 ```
 
+## Using from CDN:
 
 ```html
-<script nomodule src="myScriptlet.js" be-methodical=mood-stone-base></script>
+<script type=module crossorigin=anonymous>
+    import 'https://esm.run/be-methodical';
+</script>
 ```
+
+[or](https://generator.jspm.io)
+
+```html
+   <script type="importmap">
+  {
+    "imports": {
+      "be-methodical": "https://ga.jspm.io/npm:be-methodical@0.0.1/be-methodical.js"
+    },
+    "scopes": {
+      "https://ga.jspm.io/": {
+        "be-enhanced/": "https://ga.jspm.io/npm:be-enhanced@0.0.163/",
+        "mount-observer/MountObserver.js": "https://ga.jspm.io/npm:mount-observer@0.0.39/MountObserver.js",
+        "trans-render/": "https://ga.jspm.io/npm:trans-render@0.0.876/"
+      },
+      "https://ga.jspm.io/npm:be-enhanced@0.0.163/": {
+        "trans-render/positractions/dispatchEvent.js": "https://ga.jspm.io/npm:trans-render@0.0.876/positractions/dispatchEvent.js"
+      },
+      "https://ga.jspm.io/npm:trans-render@0.0.877/": {
+        "trans-render/lib/assignGingerly.js": "https://ga.jspm.io/npm:trans-render@0.0.877/lib/assignGingerly.js"
+      }
+    }
+  }
+  </script>
+```
+
 
