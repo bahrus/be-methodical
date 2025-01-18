@@ -43,7 +43,7 @@ This enhancement makes it simple to add such methods to Mount based custom eleme
     <xtal-element inherits=mood-stone-base></xtal-element>
 </mood-stone>
 
-<button command-for=mood-stone command="tellMeHowYouAreFeelingAboutToday">
+<button commandfor=mood-stone command="tellMeHowYouAreFeelingAboutToday">
 ```
 
 ## Example 1b  Specify alternative name for command [Untested]
@@ -64,6 +64,10 @@ This enhancement makes it simple to add such methods to Mount based custom eleme
 
 <button command-for=mood-stone command="tellMeHowYouAreFeelingAboutToday">
 ```
+
+## Example 1c Adding View Transition support [TODO]
+
+
 
 ## Viewing Demos Locally
 
